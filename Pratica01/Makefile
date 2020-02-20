@@ -5,13 +5,13 @@
 #	-Enter "make all" to build the target and run or just type "make" to simplify things
 
 #	Put here the output name
-PROGNAME = Aula02			
+PROGNAME = ProgramName
 CLS = clear
 
-TARGET = main
+TARGET = EntryPointName
 
 #	Specify the source list
-SRC = $(TARGET).cpp  ret.cpp# for example: foo.cpp bar.cpp
+SRC = $(TARGET).cpp  # for example: foo.cpp bar.cpp
 OBJ = $(SRC:%.cpp=%.o)
 
 CC = g++
