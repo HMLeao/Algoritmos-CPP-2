@@ -5,13 +5,13 @@
 #	-Enter "make all" to build the target and run or just type "make" to simplify things
 
 #	Put here the output name
-PROGNAME = ProgramName
+PROGNAME = Pratica01
 CLS = clear
 
-TARGET = EntryPointName
+TARGET = pratica01
 
 #	Specify the source list
-SRC = $(TARGET).cpp  # for example: foo.cpp bar.cpp
+SRC = $(TARGET).cpp veiculo.cpp # for example: foo.cpp bar.cpp
 OBJ = $(SRC:%.cpp=%.o)
 
 CC = g++
@@ -22,7 +22,7 @@ REMOVE = rm -f
 all: clean comp out run
 
 run:
-	@clear
+	# @clear
 	@echo -------Running------
 	@echo
 	@echo
