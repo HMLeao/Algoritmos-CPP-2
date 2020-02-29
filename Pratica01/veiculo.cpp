@@ -2,8 +2,9 @@
 
 void Veiculo::setNumRodas(int nRodas)
 {
+	delete[] rodas;
     this->num_rodas = nRodas;
-    this->roda = new Roda[nRodas]();
+    this->rodas = new Roda[nRodas]();
 }
 
 

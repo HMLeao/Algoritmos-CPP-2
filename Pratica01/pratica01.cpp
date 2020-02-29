@@ -1,3 +1,10 @@
+/*
+ * Pratica01.cpp
+ *
+ *  Created on: 29 de fev de 2020
+ *      Author: ALUNO
+ */
+
 #include <iostream>
 #include <chrono>
 #include "veiculo.h"
@@ -33,7 +40,7 @@ using namespace std;
 //     return this->num_rodas;
 // }
 
-int main() 
+int main()
 {
 
 
@@ -57,23 +64,26 @@ int main()
     //     delete obj2;
     // }
     // delete obj1;
-        
+
+    obj1->setNumRodas(4);
     obj1->setNumRodas(4);
 
-    // auto start = std::chrono::high_resolution_clock::now();
-
-    // for(int i = 0; i < 10000 ; i++)
-    // {
-    //     obj1->setNumRodas(4);
-    // }
-
-    // auto finish = std::chrono::high_resolution_clock::now();
-    // long elapsed = std::chrono::duration_cast<std::chrono::nanoseconds> (finish-start).count() / 1000;
-    // cout << "tempo[us] = " << elapsed << endl;
-
-    // cout << "o veiculo " << " possui " << obj1->getNumRodas() << " rodas" << endl;
+//     auto start = std::chrono::high_resolution_clock::now();
+//
+//     for(int i = 0; i < 10000 ; i++)
+//     {
+//         obj1->setNumRodas(4);
+//     }
+//
+//     auto finish = std::chrono::high_resolution_clock::now();
+//     long elapsed = std::chrono::duration_cast<std::chrono::nanoseconds> (finish-start).count() / 1000;
+//     cout << "tempo[us] = " << elapsed << endl;
+//
+//     cout << "o veiculo " << " possui " << obj1->getNumRodas() << " rodas" << endl;
 
     delete obj1;
 
     return 0;
 }
+
+

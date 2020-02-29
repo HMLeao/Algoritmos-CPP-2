@@ -21,9 +21,9 @@ class Veiculo
 {
 private:
     string nome;
-    int num_rodas;
+    int num_rodas = 0;
 
-    Roda * roda = NULL;
+    Roda * rodas = NULL;
 public:
     Veiculo(const char * n)
     {
@@ -34,7 +34,7 @@ public:
     ~Veiculo()
     { 
         cout << "o veiculo " << this->nome << " foi destruido" << endl;
-        delete[] roda;
+        delete[] rodas;
     }
 
     void setNumRodas(int);
