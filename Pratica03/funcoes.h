@@ -32,9 +32,10 @@ T minimo(const T a, const T b)
 template<>
 char * maximo<char*>(char * a, char * b)
 {
-    if(strcmp(a,b)>0)
+    int result = strcmp(a,b);
+    if(result>0)
         return a;
-    else if(strcmp(a,b)<0)
+    else if(result<0)
         return b;
     else
         return "iguais";
@@ -43,9 +44,10 @@ char * maximo<char*>(char * a, char * b)
 template<>
 char * minimo<char*>(char * a, char * b)
 {
-    if(strcmp(a,b)<0)
+    int result = strcmp(a,b);
+    if(result<0)
         return a;
-    else if(strcmp(a,b)>0)
+    else if(result>0)
         return b;
     else
         return "iguais";
