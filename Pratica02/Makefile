@@ -11,7 +11,7 @@ CLS = clear
 TARGET = pratica02
 
 #	Specify the source list
-SRC = $(TARGET).cpp  # for example: foo.cpp bar.cpp
+SRC = $(TARGET).cpp  veiculo.cpp # for example: foo.cpp bar.cpp
 OBJ = $(SRC:%.cpp=%.o)
 
 CC = g++
