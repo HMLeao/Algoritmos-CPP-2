@@ -1,13 +1,17 @@
 #include <iostream>
+#include <cstring>
 
-void trocar(int & a, int & b)
+
+template <class T>
+void trocar(T & a, T & b)
 {
-    int temp = a;
+    T temp = a;
     a = b;
     b = temp;
 }
 
-int maximo(const int a, const int b)
+template <class T>
+T maximo(const T a, const T b)
 {
     if(a != b)
         return a>b ? a : b;
@@ -15,7 +19,9 @@ int maximo(const int a, const int b)
         return 0;
 }
 
-int minimo(const int a, const int b)
+
+template <class T>
+T minimo(const T a, const T b)
 {
     if(a != b)
         return a<b ? a : b;
@@ -23,3 +29,24 @@ int minimo(const int a, const int b)
         return 0;
 }
 
+template<>
+char * maximo<char*>(char * a, char * b)
+{
+    if(strcmp(a,b)>0)
+        return a;
+    else if(strcmp(a,b)<0)
+        return b;
+    else
+        return "iguais";
+}
+
+template<>
+char * minimo<char*>(char * a, char * b)
+{
+    if(strcmp(a,b)<0)
+        return a;
+    else if(strcmp(a,b)>0)
+        return b;
+    else
+        return "iguais";
+}   
