@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <cstring>
 
@@ -30,7 +31,7 @@ T minimo(const T a, const T b)
 }
 
 template<>
-char * maximo<char*>(char * a, char * b)
+const char * maximo<const char*>(const char * a, const char * b)
 {
     int result = strcmp(a,b);
     if(result>0)
@@ -42,7 +43,7 @@ char * maximo<char*>(char * a, char * b)
 }
 
 template<>
-char * minimo<char*>(char * a, char * b)
+const char * minimo<const char*>(const char * a, const char * b)
 {
     int result = strcmp(a,b);
     if(result<0)
