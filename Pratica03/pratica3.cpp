@@ -52,6 +52,8 @@ int main()
     }
     ex_tes.exibir();
 
+
+
     Arranjo<Aluno> turma(3);
     try{
         turma.set(0,Aluno("João","1234"));

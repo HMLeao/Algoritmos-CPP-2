@@ -14,20 +14,14 @@ void trocar(T & a, T & b)
 template <class T>
 T maximo(const T a, const T b)
 {
-    if(a != b)
         return a>b ? a : b;
-    else
-        return 0;
 }
 
 
 template <class T>
 T minimo(const T a, const T b)
 {
-    if(a != b)
         return a<b ? a : b;
-    else
-        return 0;
 }
 
 template<>
