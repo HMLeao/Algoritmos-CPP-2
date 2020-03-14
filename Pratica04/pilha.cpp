@@ -6,13 +6,13 @@
  */
 
 #include <iostream>
-#include "pilha2.h"
+#include "pilha.h"
 
 #define MAX 100
 
 using namespace std;
 
-int mainP() {
+int main() {
 	Pilha<int> pilha(MAX);
 
 	try {

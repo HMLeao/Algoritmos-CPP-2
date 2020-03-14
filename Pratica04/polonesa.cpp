@@ -30,7 +30,7 @@ int avalia(char token, int valorEsq, int valorDir) {
 }
 
 int polonesa(const char * exp) {
-	Pilha<int> pilha;
+	Pilha<int> pilha(10);
 	while (*exp) {
 		char token = *exp;
 		if (ehOperador(token)) {
@@ -48,7 +48,7 @@ int polonesa(const char * exp) {
 }
 
 
-int main5() {
+int main() {
 	cout << polonesa("23+31-*") << endl;
 	cout << polonesa("93*42/-") << endl;
 
